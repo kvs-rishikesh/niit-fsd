@@ -1,0 +1,58 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    overflow: hidden;
+    padding: 10px 20px;
+    color: white;
+}
+
+
+nav span {
+    font-size: 18px;
+    font-weight: bold;
+    float: left; 
+}
+
+
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+}
+
+nav li {
+    float: left;
+    margin: 0 20px;
+    padding-right: 5px;
+    padding-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+
+nav li:last-child {
+    float: right; 
+    margin: 0; 
+    border: 1px solid aquamarine;
+    background-color: aquamarine;
+    border-width: 4px;
+    border-radius: 5px;
+}
+
+nav li:last-child:hover {
+    background-color:gray; 
+    border-color: gray; 
+}

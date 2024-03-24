@@ -1,0 +1,55 @@
+.body {
+    position: relative;
+    top: 50px;
+    left: 35%;
+    background-color: #e4e4e4;
+    width: 30%;
+    border: 1px solid rgb(194, 192, 192);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.icon i {
+    float: left;
+    font-size: 85px;
+    margin-left: 15px;
+}
+h3 {
+    font-size: 30px;
+    padding-top: 15px;
+    margin-bottom: 05px;
+}
+h6 {
+    color: gray;
+    font-size: medium;
+    margin-top: 5px;
+}
+h3,h6 {
+    margin-left: 100px;
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+}
+p {
+    color: grey;
+    font-family: sans-serif;
+    padding: 10px;
+    margin-left: 10px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: purple;
+    font-family: sans-serif;
+}
+.footer i {
+    margin-left: 15px;
+    font-size: 25px;
+    color: gray;
+}

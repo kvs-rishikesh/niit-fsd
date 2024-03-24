@@ -1,0 +1,57 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: black;
+    overflow: hidden;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  nav span {
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav li {
+    float: left; 
+    margin: 0 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: gray;
+  }
+  
+  #contact{
+    float: right; 
+    margin-left: 320px; 
+    border: 1px solid aquamarine;
+    background-color: aquamarine;
+    border-width: 4px;
+    border-radius: 5px;
+    color:black;
+  }
+  
+  #contact:hover {
+    background-color: gray; 
+    border-color: gray;
+  }
+  
+  nav li:last-child {
+    float: right;
+  }

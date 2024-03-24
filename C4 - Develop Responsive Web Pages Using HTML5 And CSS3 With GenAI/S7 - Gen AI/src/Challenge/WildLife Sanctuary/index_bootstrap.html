@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Mara Wildlife Sanctuary</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: blue;
+            color: white;
+            padding: 15px;
+        }
+
+        nav div {
+            margin-right: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        header {
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 1500px;
+            height: auto;
+        }
+
+        .caption {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            color: black;
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        form {
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form label, form textarea, .ne {
+            display: block;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form textarea {
+            height: 100px;
+        }
+
+        form input[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-blue bg-blue">
+        <div class="navbar-brand">Masai Mara Wildlife Sanctuary</div>
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Gallery</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <img src="https://picsum.photos/id/93/1200/600" alt="Wildlife Sanctuary Image">
+        <div class="caption">Step into the Wild Wonder: Embrace Nature at its Best</div>
+    </header>
+
+    <section class="container">
+        <h2>Welcome to Masai Mara Wildlife Sanctuary</h2>
+        <p>Explore the beauty of nature in our wildlife sanctuary, where you can witness the wonders of the wild. Immerse yourself in the natural habitat of diverse species and experience the thrill of encountering wildlife in its true essence.</p>
+    </section>
+
+    <section class="container">
+        <h2>About Us</h2>
+        <p>Discover the rich biodiversity of Masai Mara Wildlife Sanctuary, home to a variety of species. Our commitment is to preserve and protect the natural environment, providing a safe haven for animals to thrive.</p>
+    </section>
+
+    <section class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://picsum.photos/id/433/590/400/?1" alt="Image 1">
+            <img src="https://picsum.photos/id/577/590/400/?2" alt="Image 2">
+            <img src="https://picsum.photos/id/593/590/400/?3" alt="Image 3">
+            <img src="https://picsum.photos/id/219/590/400/?4" alt="Image 4">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <section class="container contact-info">
+        <h2>Contact Us</h2>
+        <p>For inquiries and reservations, feel free to reach out to us. We are here to assist you in planning an unforgettable experience in the heart of nature.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input class="form-control ne" type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input class="form-control ne" type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+
+            <input class="btn btn-primary" type="submit" value="Submit message">
+        </form>
+    </section>
+
+    <footer class="container-fluid bg-blue text-white">
+        <div class="d-flex justify-content-center">
+            <a class="text-white" href="#" target="_blank">Facebook</a>
+            <a class="text-white" href="#" target="_blank">Twitter</a>
+            <a class="text-white" href="#" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 Masai Mara Wildlife Sanctuary. All rights reserved.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* Add custom styles using CSS media queries */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background-color: blue;
+    color: white;
+    text-align: left;
+    padding: 15px 30px;
+    padding-left: 175px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav div {
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding-left: 20px;
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    max-width: 1500px; /* Adjust the max-width to fit your design */
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: black;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-flex;
+    align-items: center;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a img {
+    margin-right: 5px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+.contact-info {
+    margin: 20px 0;
+    text-align: center;
+    width: 50%;
+    margin-left: 280px;
+}
+
+.contact-info p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-right: 380px;
+}
+
+form label, form textarea, .ne {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 80%;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* Media queries for responsive design */
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    nav {
+        padding-left: 20px;
+    }
+
+    header img {
+        max-width: 100%;
+    }
+
+    form {
+        margin-right: 20px;
+    }
+}
+
+/* For screens between 600px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    nav {
+        padding-left: 40px;
+    }
+
+    header img {
+        max-width: 90%;
+    }
+
+    form {
+        margin-right: 40px;
+    }
+}
+
+/* For screens larger than 900px */
+@media (min-width: 901px) {
+    .contact-info {
+        width: 50%;
+        margin-left: 280px;
+    }
+
+    form {
+        margin-right: 380px;
+    }
+
+    .gallery-grid img {
+        margin-left: 50px;
+    }
+}
