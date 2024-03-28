@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let data = {firstName : "James", lastName : "Smith", age : 34, isMarried : true, city : "San Jose", state : "California", postalCode : "CA"};
+            function performValidation(data) {
+                let{firstName,lastName,age,isMarried,city,state,postalCode} = data;
+                if(!firstName) {
+                    return "First Name should not be undefined";
+                }
+                else if(typeof firstName!=="string") {
+                    return "First Name Type should be String Type";
+                }
+                if (lastName && typeof lastName!=="string") {
+                    return "Last Name Type should be String Type"
+                }
+                if (age===undefined) {
+                    return "Age should not be undefined";
+                }
+                else if (typeof age!=="number") {
+                    return "Age Value should be type of Number";
+                }
+                else if (age<18 || age>60) {
+                    return "Age should be between 18 and 60";
+                }
+                if (typeof isMarried!=="boolean") {
+                    return "IsMarried should be of Boolean Type";
+                }
+                if (!city) {
+                    return "City Value should not be undefined";
+                }
+                else if (typeof city!=="string") {
+                    return "City Type should be String Type";
+                }
+                if (!state) {
+                    return "State Value should not be undefined";
+                }
+                else if (typeof state!=="string") {
+                    return "City Value should be String Type";
+                }
+                if (!postalCode) {
+                    return "Postal Code Value should not be undefined";
+                }
+                else if (typeof postalCode!=="string") {
+                    return "Postal Code Value should be String Type";
+                }
+                else {
+                    return "Data is Valid";
+                }
+            }
+            let validationMessage = performValidation(data);
+            console.log(validationMessage);
+        </script>
+    </head>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let num1 = 30;
+let num2 = 50;
+let num3 = 45;
+
+let resultant;
+let ternaryresult;
+if (num1>=num2) {
+    if (num1>=num3) {
+        resultant = num1;
+    }
+    else {
+        resultant = num3;
+    }
+}
+else {
+    if (num2>num3) {
+        resultant = num2;
+    }
+    else {
+        resultant = num3;
+    }
+}
+console.log(resultant);
+ternaryresult = (num1>=num2)?((num1>=num3)?num1:num3):((num2>=num3)?num2:num3);
+console.log(ternaryresult);
+        </script>
+    </head>
+</html>
