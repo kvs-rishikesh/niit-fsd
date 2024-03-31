@@ -1,0 +1,9 @@
+<app-search (searchText)="onSearchText($event)" ></app-search>
+<app-note-add (noteadded)="onnoteAdded($event)"></app-note-add>
+<app-note *ngFor="let notes of n"  [note]="notes"></app-note>
+<!-- <div class="card" *ngFor="let note of n">
+    <div class="card-content" >
+        <h4>{{note.title}}</h4>
+        <p>{{note.content}}</p>
+    </div>
+</div> -->

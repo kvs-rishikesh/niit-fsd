@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "_username": "Rishi",
+      "_password": "111111",
+      "_contact": 1234567890,
+      "_email": "testing@gmail.com",
+      "_address": "Guntur,Andhra Pradesh",
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+.add{
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    border:1px solid navy;
+    width: 200px;
+    margin-left: 500px;
+    margin-top: 10px;
+    font-family: cursive;
+}
+input{
+    
+    border: none;
+    border-bottom: 2px solid navy;
+}
+textarea{
+    border: none;
+    border-bottom: 2px solid navy;
+}
+button{
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+}
