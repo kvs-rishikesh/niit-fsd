@@ -1,0 +1,48 @@
+"HTTP Request		",For Adding new movie with id 514,For Adding new movie with id 503
+"URL		"http://localhost:3000/data,,
+"METHOD	"POST,POST,
+"Request Body 		"
+{
+        "id": 514,
+        "movieTitle": "Father of the Bride",
+        "genre": "Adventure",
+          "yearOfRelease": 2021,
+        "director": "Gary Alazraki",
+        "actor-1": {
+            "actorName": "Andy Garcia",
+            "onScreenName": "Billy Herrera"
+        },
+        "actor-2": {
+            "actorName": "Gloria Estefan",
+            "onScreenName": "Ingrid Herrera"
+        },
+        "actor-3": {
+            "actorName": "Adria Arjona",
+            "onScreenName": "Sofia Herrera"
+        },
+        "rating": 5.9,
+        "isOnOTT": "No",
+        "Ott":null
+   
+    },
+    {
+        "id": 503,
+        "movieTitle": "Spiderhead",
+        "genre": "Action",
+             "yearOfRelease": 2022,
+        "director": "Joseph Kosinski",
+        "actor-1": {
+            "actorName": "Chris Hemsworth",
+            "onScreenName": "Abnesti Jeff"
+        },
+        "rating": 5.4,
+        "isOnOTT": "No",
+        "Ott":null
+       
+    },,
+"Content Type	"raw,,
+Body ,,
+"HTTP Response		",,
+"Status Code		"201,,
+"Status Message	"Created,Internal Server Error,
+Body,,

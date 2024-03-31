@@ -1,0 +1,54 @@
+"HTTP Request		",To update movie for id 514,To update movie for id 500
+"URL		"http://localhost:3000/data,,
+"METHOD	"PUT,POST,
+"Request Body 		",
+{
+    "id": 514,
+    "movieTitle": "Father of the Bride",
+    "genre": "Adventure",
+    "yearOfRelease": 2021,
+    "director": "Gary Alazraki",
+    "actor-1": {
+        "actorName": "Andy Garcia",
+        "onScreenName": "Billy Herrera"
+    },
+    "actor-2": {
+        "actorName": "Gloria Estefan",
+        "onScreenName": "Ingrid Herrera"
+    },
+    "actor-3": {
+        "actorName": "Adria Arjona",
+        "onScreenName": "Sofia Herrera"
+    },
+    "rating": 5.9,
+    "isOnOTT": "Yes",
+    "Ott": "Netflix"
+},
+{
+    "id": 500,
+    "movieTitle": "Top Gun",
+    "genre": "Action",
+    "yearOfRelease": 1986,
+    "director": "Tony Scott",
+    "actor-1": {
+        "actorName": "Tom Cruise",
+        "onScreenName": "Maverick"
+    },
+    "actor-2": {
+        "actorName": "Tim Robbins",
+        "onScreenName": "Merlin"
+    },
+    "actor-3": {
+        "actorName": "McGillies",
+        "onScreenName": "Charlie"
+    },
+    "rating": 6.9,
+    "isOnOTT": "Yes",
+    "Ott": "Prime Video"
+},
+"Content Type	",RAW,
+Body ,,
+"HTTP Response		",,
+"Status Code		"200,201,
+"Status Message	"Successful Response,Created,
+Body,,

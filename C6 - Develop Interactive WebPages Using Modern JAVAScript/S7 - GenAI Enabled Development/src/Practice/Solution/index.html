@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiDelights</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark justify-content-center">
+        <h2 class="navbar-brand mb-0 h2">Interesting Numbers</h2>
+    </nav>
+    <div class="container mt-4">
+        <div class="text-left">
+            <h3>Know Interesting Facts of Numbers and Dates</h3>
+        </div>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputNumber" placeholder="Enter Number or Date (mm/dd):">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="getTrivia()">Get Trivia</button>
+        </form>
+        <div class="form-group mt-3">
+            <input type="text" class="form-control" id="description" placeholder="Enter Description">
+        </div>
+        <button type="button" class="btn btn-success" onclick="saveTrivia()">Save Trivia</button>
+        <div id="result" class="mt-4"></div>
+    </div>
+    <footer class="footer bg-dark">
+        <div class="container text-center">
+            <span class="text-muted">&copy; 2023 DigiDelights. All rights reserved</span>
+            <div class="social-icons mt-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

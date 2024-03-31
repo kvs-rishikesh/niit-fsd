@@ -1,0 +1,45 @@
+/* Custom styles for DigiDelights */
+
+/* Centering the navbar */
+.navbar {
+  text-align: center;
+}
+
+/* Adjusting heading alignment */
+.container > .text-left {
+  text-align: left;
+}
+
+/* Adjusting form alignment */
+.container form {
+  text-align: left;
+}
+
+/* Aligning the footer content */
+/* Adjusting the footer to remain fixed at the bottom */
+.footer {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999; /* Ensure the footer is above other content */
+}
+
+
+.footer .social-icons a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+  color: #007bff;
+}
+
+/* Adjusting form group margin */
+.form-group {
+  margin-bottom: 10px;
+}
+/* Adjusting the result container to allow scrolling */
+

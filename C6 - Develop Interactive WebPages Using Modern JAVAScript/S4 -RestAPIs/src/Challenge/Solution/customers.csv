@@ -1,0 +1,194 @@
+HTTP Request,Fetch all customer details,Fetch Customer by ID,Fetch Customer by Name,Fetch Customer by Email,Add new customer,Update customer details
+URL,,,,,,
+METHOD,,,,,,
+"Request Body 		",,,,,,
+"Content Type	",,,,,,
+Body ,,,,,,
+,,,,,,
+HTTP Response,,,,,,
+Status Code,,,,,,
+Status Message,,,,,,
+Body,,,,,,
+
+------------------------------------------------------------------------
+HTTP Requesr for viewing all customer details
+URL : http://localhost:3001/customers
+METHOD : GET
+Request Body : 
+Content Type : json
+Body : RAW
+HTTP Response : 
+Status Code : 200
+Status Message : OK
+Body : [
+    {
+        "id": "1",
+        "name": "David",
+        "email": "david@gmail.com",
+        "phoneNumber": "+11527896543",
+        "address": {
+            "streetName": "Court Street",
+            "streetNo": "123",
+            "postalCode": "2617"
+        }
+    },
+    {
+        "id": "2",
+        "name": "Mary",
+        "email": "mary@gmail.com",
+        "phoneNumber": "+11524449876",
+        "address": {
+            "streetName": "Scottsdale Kierland",
+            "streetNo": "100",
+            "postalCode": "85254"
+        }
+    },
+    {
+        "id": "3",
+        "name": "Jennifer",
+        "email": "Jennifer@yahoo.com",
+        "phoneNumber": "+11525432178",
+        "address": {
+            "streetName": "Beachwalk",
+            "streetNo": "902",
+            "postalCode": "96815"
+        }
+    },
+    {
+        "id": "4",
+        "name": "Jessica",
+        "email": "Jessica@live.com",
+        "phoneNumber": "+11523456732",
+        "address": {
+            "streetName": "Bellevue Square",
+            "streetNo": "378",
+            "postalCode": "98004"
+        }
+    },
+    {
+        "id": "5",
+        "name": "Paul",
+        "email": "Paul@gmail.com",
+        "phoneNumber": "+11526789543",
+        "address": {
+            "streetName": "Buena Vista Drive",
+            "streetNo": "A-498",
+            "postalCode": "32830"
+        }
+    }
+]
+
+----------------------------------------------------------
+HTTP Request for Searching Customer by ID
+URL : http://localhost:3001/customers/3
+METHOD : GET
+Request Body : 
+Content Type : json
+Body : RAW
+HTTP Response : 
+Status Code : 200
+Status Message : OK
+Body : {
+    "id": "3",
+    "name": "Jennifer",
+    "email": "Jennifer@yahoo.com",
+    "phoneNumber": "+11525432178",
+    "address": {
+        "streetName": "Beachwalk",
+        "streetNo": "902",
+        "postalCode": "96815"
+    }
+}
+
+-----------------------------------------------------------
+HTTP Request for Searching Customer by Name
+URL : http://localhost:3001/customers?name=David
+METHOD : GET
+Request Body : 
+Content Type : json
+Body : RAW
+HTTP Response : 
+Status Code : 200
+Status Message : OK
+Body : [
+    {
+        "id": "1",
+        "name": "David",
+        "email": "david@gmail.com",
+        "phoneNumber": "+11527896543",
+        "address": {
+            "streetName": "Court Street",
+            "streetNo": "123",
+            "postalCode": "2617"
+        }
+    }
+]
+
+------------------------------------------------------------
+HTTP Request for Searching Customer by E-mail
+URL : http://localhost:3001/customers?email=Jessica@live.com
+METHOD : GET
+Request Body : 
+Content Type : json
+Body : RAW
+HTTP Response : 
+Status Code : 200
+Status Message : OK
+Body : [
+    {
+        "id": "4",
+        "name": "Jessica",
+        "email": "Jessica@live.com",
+        "phoneNumber": "+11523456732",
+        "address": {
+            "streetName": "Bellevue Square",
+            "streetNo": "378",
+            "postalCode": "98004"
+        }
+    }
+]
+
+--------------------------------------------------------------
+HTTP Request for Adding New Customer Details
+URL : http://localhost:3001/customers
+METHOD : POST
+Request Body : 
+Content Type : json
+Body : RAW
+HTTP Response : 
+Status Code : 201
+Status Message : Created
+Body : {
+    "id": "6",
+    "name": "Steve",
+    "email": "Steve@live.com",
+    "phoneNumber": "+11523488",
+    "address": {
+        "streetName": "Church Street",
+        "streetNo": "A-1111",
+        "postalCode": "11111"
+    }
+}
+
+---------------------------------------------------------------
+HTTP Request for Modifying Contact Details
+"phoneNumber" : "+1111999",
+URL : http://localhost:3001/customers/6
+METHOD : PUT
+Request Body : 
+Content Type : json
+Body : RAW
+HTTP Response : 
+Status Code : 200
+Status Message : OK
+Body : {
+    "id": "6",
+    "name": "Steve",
+    "email": "Steve@live.com",
+    "phoneNumber": "+1111999",
+    "address": {
+        "streetName": "Church Street",
+        "streetNo": "A-1111",
+        "postalCode": "11111"
+    }
+}
