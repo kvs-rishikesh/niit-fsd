@@ -1,0 +1,14 @@
+#image-viewer {
+    margin: 40px auto;
+    width: 30%;
+}
+
+#image-viewer img {
+    height: 300px;
+    width: 100%;
+}
+
+h5, h6 {
+    color: rgb(9, 77, 201);
+    margin: 20px;
+}

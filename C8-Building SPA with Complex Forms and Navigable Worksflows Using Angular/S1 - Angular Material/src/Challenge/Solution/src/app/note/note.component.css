@@ -1,0 +1,15 @@
+.note-card{
+    width: 18rem;
+    margin: 2rem;
+}
+h3{
+    text-align: center;
+}
+.card-actions{
+    display: none;
+}
+.note-card:hover{
+    .card-actions{
+        display: block;
+    }
+}
